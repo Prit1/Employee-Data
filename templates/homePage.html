@@ -1,0 +1,24 @@
+<div>
+    <h3> List of Employees </h3>
+</div>
+
+<div>
+    <table>
+        <tr>
+            <th ng-click="orderByMe('id')"> Id </th>
+            <th ng-click="orderByMe('firstname')"> First Name </th>
+            <th> Middle Initial </th>
+            <th> Last Name </th>
+            <th> Birth Date</th>
+            <th ng-click="orderByMe('age')"> Age </th>
+        </tr>
+        <tr ng-repeat="i in result | orderBy: sortByOrder" >
+            <td>{{i.id}}</td>
+            <td>{{i.firstname}}</td>
+            <td>{{i.middlename}}</td>
+            <td>{{i.lastname}}</td>
+            <td>{{i.birthdate}}</td>
+            <td>{{i.age}}</td>
+        </tr>
+    </table>
+</div>

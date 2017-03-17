@@ -1,0 +1,220 @@
+#wrapper{
+    height: 1000px;
+}
+nav {
+
+    margin-top: 40px;
+    padding: 24px;
+    text-align: center;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+#navi{
+    background:#EEA200;
+
+}
+.link-3 {
+    transition: 0.4s;
+    color: #ffffff;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 0 10px;
+    margin: 0 10px;
+}
+.link-3:hover {
+    background-color: #ffffff;
+    color: #EEA200;
+    padding: 24px 10px;
+}
+h3 {
+    margin-top: 60px;
+    text-align: center;
+}
+table {
+    background: #f5f7dc;
+    border-collapse: separate;
+    box-shadow: inset 0 1px 0 #fff;
+    font-size: 15px;
+    line-height: 24px;
+    margin: 30px auto;
+    text-align: center;
+    width: 800px;
+}
+
+th {
+    background:#EEA200;
+    border-left: 1px solid #555;
+    border-right: 1px solid #777;
+    border-top: 1px solid #555;
+    border-bottom: 1px solid #333;
+    box-shadow: inset 0 1px 0 #999;
+    color: white;
+    font-weight: bold;
+    padding: 10px 15px;
+    position: relative;
+    text-shadow: 0 1px 0 #000;
+}
+
+th:after {
+    background: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,.08));
+    content: '';
+    display: block;
+    height: 25%;
+    left: 0;
+    margin: 1px 0 0 0;
+    position: absolute;
+    top: 25%;
+    width: 100%;
+}
+
+th:first-child {
+    border-left: 1px solid #777;
+    box-shadow: inset 1px 1px 0 #999;
+}
+
+th:last-child {
+    box-shadow: inset -1px 1px 0 #999;
+}
+
+td {
+    border-right: 1px solid #fff;
+    border-left: 1px solid #e8e8e8;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #e8e8e8;
+    padding: 10px 15px;
+    position: relative;
+    transition: all 300ms;
+}
+
+td:first-child {
+    box-shadow: inset 1px 0 0 #fff;
+}
+
+td:last-child {
+    border-right: 1px solid #e8e8e8;
+    box-shadow: inset -1px 0 0 #fff;
+}
+
+tr:last-of-type td {
+    box-shadow: inset 0 -1px 0 #fff;
+}
+
+tr:last-of-type td:first-child {
+    box-shadow: inset 1px -1px 0 #fff;
+}
+
+tr:last-of-type td:last-child {
+    box-shadow: inset -1px -1px 0 #fff;
+}
+
+.btn {
+    background: #3fa46a;
+    background-image: -webkit-linear-gradient(top, #EEA200, #04080a);
+    background-image: -moz-linear-gradient(top, #EEA200, #04080a);
+    background-image: -ms-linear-gradient(top, #EEA200, #04080a);
+    background-image: -o-linear-gradient(top, #EEA200, #04080a);
+    background-image: linear-gradient(to bottom, #EEA200, #04080a);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 6px 17px 6px 17px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: #606466;
+    background-image: -webkit-linear-gradient(top, #04080a, #EEA200);
+    background-image: -moz-linear-gradient(top, #04080a, #EEA200);
+    background-image: -ms-linear-gradient(top, #04080a, #EEA200);
+    background-image: -o-linear-gradient(top, #04080a, #EEA200);
+    background-image: linear-gradient(to bottom, #04080a, #EEA200);
+    text-decoration: none;
+}
+
+div > input[type=button] {
+    margin-left: 800px;
+}
+
+.myform {
+    max-width: 600px;
+    height: 400px;
+    padding: 40px 40px;
+    margin: 30px auto;
+    margin-top: 70px;
+    background: #e4bc72;
+    border-radius: 8px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.mylabel {
+    float: left;
+    padding-left: 10px;
+    /*padding-top: 20px;
+    padding-bottom: 20px;*/
+    font-weight: bold;
+}
+
+.forminput
+{
+    float: right;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    background: rgba(228, 188, 114, 0.11);
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-left: 50px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    outline: 0;
+    padding: 7px;
+    padding-left: 10px;
+    width: 60%;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    background-color: rgba(239, 142, 0, 0.71);
+    color: #f5edaa;
+    -webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    margin-bottom: 30px;
+}
+
+.forminput:focus
+{
+    background: rgba(255, 214, 140, 0.57);
+}
+.forminput::-webkit-input-placeholder{
+    color: #000;
+}
+.myform .btn {
+    margin-left: 100px;
+    margin-right: 60px;
+}
+
+span > label {
+    margin-left: 440px;
+}
+
+span > input[type=text] {
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #3f5bff;
+    border-radius: 4px;
+}
+
+#footer {
+    position:fixed;
+    bottom:0;
+    width:100%;
+    height:30px;
+    background: #e4bc72;
+    color: #e6e6e7;
+    text-align: center;
+    padding-top: 10px;
+}
+
+

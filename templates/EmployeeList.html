@@ -1,0 +1,33 @@
+<div>
+    <h3> List of Employees  </h3>
+    <span> <label> Filter By: </label>
+           <input type="text"
+                  ng-model="filterId.id"
+                  oninput="this.value=this.value.replace(/[^0-9]/g,'');"
+                  placeholder="Enter any ID">
+    </span>
+    <table>
+        <tr>
+            <th title="Arrange by ascending order" ng-click="orderByMe('id')"> Id </th>
+            <th title="Arrange by alphabetical order" ng-click="orderByMe('firstname')"> First Name </th>
+            <th> Middle Initial </th>
+            <th> Last Name </th>
+            <th> Birth Date</th>
+            <th title="Arrange by ascending order" ng-click="orderByMe('age')"> Age </th>
+            <th> Edit </th>
+        </tr>
+        <tr ng-repeat="i in result  | orderBy: sortByOrder | filter: filterId" >
+            <td>{{i.id}}</td>
+            <td>{{i.firstname}} </td>
+            <td>{{i.middlename}} </td>
+            <td>{{i.lastname}}</td>
+            <td>{{i.birthdate}}</td>
+            <td>{{i.age }}</td>
+            <td>
+                <span> <button type="submit" class="btn" ng-click="editData(i.id)">Edit</button></span>
+                <span> <input type="button" class="btn" value="Delete" ng-click="deleteData(i)" /> </span>
+            </td>
+        </tr>
+    </table>
+    <input type="button" class="btn" value="Add" ng-click="addNew(i)">
+</div>

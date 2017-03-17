@@ -1,0 +1,54 @@
+
+<div>
+    <form class="myform" ng-submit="test()">
+        <label class="mylabel"> Employee Id: </label>
+        <input type="number"
+               class="forminput"
+               name="eid"
+               maxlength="3"
+               ng-model="newid"
+               placeholder="Employee Id" required>
+        <label class="mylabel" style="padding-top: 45px;"> First Name: </label>
+        <input type="text"
+               class="forminput"
+               name="fname"
+               minlength="3"
+               oninvalid="setCustomValidity('Enter minimum 3 letters')"
+               ng-model="newfirstname"
+               placeholder="First name" required>
+        <label class="mylabel" style="padding-top: 45px;"> Middle Initial: </label>
+        <input type="text"
+               class="forminput"
+               name="mname"
+               maxlength="1"
+               ng-model="newmiddlename"
+               placeholder="Middle initial">
+        <label class="mylabel" style="padding-top: 45px;"> Last Name: </label>
+        <input type="text"
+               class="forminput"
+               name="lname"
+               minlength="3"
+               oninvalid="setCustomValidity('Enter minimum 3 letters')"
+               ng-model="newlastname"
+               placeholder="Last name" required>
+        <label class="mylabel" style="padding-top: 45px;"> Birth Date: </label>
+        <input type="text"
+               class="forminput"
+               name="bdate"
+               pattern="(0[1-9]|1[012])[- /.](0[1-9]|[12][0-9]|3[01])[- /.](19|20)\d\d"
+               oninvalid="setCustomValidity('Date format should be MM/DD/YYYY')"
+               ng-model="newbirthdate"
+               placeholder="MM/DD/YYYY"
+               required>
+        <label class="mylabel" style="padding-top: 45px;"> Age:&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; </label>
+        <input type="text"
+               class="forminput"
+               name="age"
+               ng-model="newage"
+               placeholder="Current Age"
+               required>
+        <span><button type="submit" ng-show="updatebtn" class="btn">Update</button> </span>
+        <span> <button type="submit" ng-show="savebtn" class="btn">Save</button></span>
+        <button type="submit" class="btn" ng-click="Cancel()">Cancel </button>
+    </form>
+</div>
