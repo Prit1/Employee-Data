@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>HomePage</title>
+    <link rel="stylesheet" href="Style/Main.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-route.js"></script>
+
+    <script src="Scripts/index.js"> </script>
+    <script src="Controllers/EmpController.js"> </script>
+    <script src="Controllers/FormController.js"> </script>
+</head>
+<body ng-cloak>
+<div id="wrapper">
+    <nav id="navi">
+        <a class="link-3" href="#/">Home</a>
+        <a class="link-3" href="#/empList">Employee List</a>
+    </nav>
+    <div id="content">
+        <div ng-view> </div>
+    </div>
+
+    <div id="footer">
+        All rights reserved &copy; 2016 Prit Parmar
+    </div>
+</div>
+</body>
+</html>
